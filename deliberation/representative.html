@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>议事规则 &#8212; 量潮团队协作标准</title>
+    <title>议事代表 &#8212; 量潮团队协作标准</title>
   
   
   
@@ -57,10 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'deliberation/parliamentary_procedure';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'deliberation/representative';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="议程" href="agenda.html" />
+    <link rel="next" title="议题" href="issue.html" />
+    <link rel="prev" title="议事机构" href="institute.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,10 +174,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../discussion/README.html">讨论</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">议事</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="institute.html">议事机构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="representative.html">议事代表</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">议事代表</a></li>
 <li class="toctree-l2"><a class="reference internal" href="issue.html">议题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="agenda.html">议程</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">议事规则</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parliamentary_procedure.html">议事规则</a></li>
 </ul>
 </li>
 </ul>
@@ -233,7 +234,7 @@
       
       
       
-      <li><a href="../_sources/deliberation/parliamentary_procedure.md" target="_blank"
+      <li><a href="../_sources/deliberation/representative.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -315,7 +316,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>议事规则</h1>
+    <h1>议事代表</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -330,11 +331,17 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>议事规则<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>**议事规则（<code class="docutils literal notranslate"><span class="pre">ParliamentaryProcedure</span></code>）**是一套规定如何进行议事和决策的程序性规则。这些规则定义了议事的流程、如何提出和讨论议题、如何投票表决以及如何处理议事中的各种情况。</p>
-<p>字段定义如下：</p>
+<h1>议事代表<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>议事代表(<code class="docutils literal notranslate"><span class="pre">Representative</span></code>)是指在一个议事机构中被选举或指定来代表特定群体、组织或地区利益的人。
+议事代表在机构中拥有发言权和投票权，他们参与讨论、提出建议，并在决策过程中代表所代表的群体或区域的利益。</p>
+<p>议事代表可能是由选举产生，如国会议员；也可能是由任命产生，如公司董事会成员。
+他们的角色是确保所代表的利益得到充分的考虑和代表。</p>
+<p>字段：</p>
 <ul class="simple">
-<li><p><strong>条款列表（<code class="docutils literal notranslate"><span class="pre">rules</span></code>）</strong>：议事规则的具体条款列表，每个条款都有一个唯一的标识符和相关信息。</p></li>
+<li><p>ID(<code class="docutils literal notranslate"><span class="pre">id</span></code>)</p></li>
+<li><p>创建时间(<code class="docutils literal notranslate"><span class="pre">createdAt</span></code>)</p></li>
+<li><p>用户(<code class="docutils literal notranslate"><span class="pre">user</span></code>)</p></li>
+<li><p>议事机构(<code class="docutils literal notranslate"><span class="pre">institute</span></code>)</p></li>
 </ul>
 </section>
 
@@ -369,13 +376,22 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="agenda.html"
+       href="institute.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">议程</p>
+        <p class="prev-next-title">议事机构</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="issue.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">议题</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

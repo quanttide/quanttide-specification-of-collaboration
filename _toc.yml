@@ -4,6 +4,8 @@ chapters:
   - file: discussion/README.md
   - file: deliberation/README.md
     sections:
+      - file: deliberation/institute.md
+      - file: deliberation/representative.md
       - file: deliberation/issue.md
       - file: deliberation/agenda.md
       - file: deliberation/parliamentary_procedure.md

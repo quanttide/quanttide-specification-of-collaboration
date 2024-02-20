@@ -1,6 +1,9 @@
 format: jb-book
 root: index.md
 chapters:
+  - file: planning/README.md
+    sections:
+      - file: planning/plan.md
   - file: discussion/README.md
   - file: deliberation/README.md
     sections:

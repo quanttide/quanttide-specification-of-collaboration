@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>议题 &#8212; 量潮团队协作标准</title>
+    <title>计划管理 &#8212; 量潮团队协作标准</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'deliberation/issue';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'planning/README';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="议程" href="agenda.html" />
-    <link rel="prev" title="议事代表" href="representative.html" />
+    <link rel="next" title="计划" href="plan.html" />
+    <link rel="prev" title="简介" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,17 +171,17 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../planning/README.html">计划管理</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../planning/plan.html">计划</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">计划管理</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="plan.html">计划</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../discussion/README.html">讨论</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">议事</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="institute.html">议事机构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="representative.html">议事代表</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">议题</a></li>
-<li class="toctree-l2"><a class="reference internal" href="agenda.html">议程</a></li>
-<li class="toctree-l2"><a class="reference internal" href="parliamentary_procedure.html">议事规则</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../deliberation/README.html">议事</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../deliberation/institute.html">议事机构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deliberation/representative.html">议事代表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deliberation/issue.html">议题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deliberation/agenda.html">议程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deliberation/parliamentary_procedure.html">议事规则</a></li>
 </ul>
 </li>
 </ul>
@@ -238,7 +238,7 @@
       
       
       
-      <li><a href="../_sources/deliberation/issue.md" target="_blank"
+      <li><a href="../_sources/planning/README.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -320,7 +320,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>议题</h1>
+    <h1>计划管理</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -335,18 +335,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>议题<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>**议题（<code class="docutils literal notranslate"><span class="pre">Issue</span></code>）**是在议事过程中提出的一个具体主题。</p>
-<p>字段定义如下：</p>
-<ul class="simple">
-<li><p><strong>ID（<code class="docutils literal notranslate"><span class="pre">id</span></code>）</strong> ：一个唯一的标识符，用于引用特定的议题。</p></li>
-<li><p><strong>创建时间（<code class="docutils literal notranslate"><span class="pre">createdAt</span></code>）</strong>： 议题创建的日期和时间。</p></li>
-<li><p><strong>更新时间（<code class="docutils literal notranslate"><span class="pre">updatedAt</span></code>）</strong>：议题最后修改的日期和时间。</p></li>
-<li><p><strong>标题（<code class="docutils literal notranslate"><span class="pre">title</span></code>）</strong>： 议题的简短描述性标题。</p></li>
-<li><p><strong>内容（<code class="docutils literal notranslate"><span class="pre">content</span></code>）</strong>：议题的具体内容。</p></li>
-<li><p><strong>状态（<code class="docutils literal notranslate"><span class="pre">status</span></code>）</strong>：议题的当前状态。</p></li>
-<li><p><strong>优先级（<code class="docutils literal notranslate"><span class="pre">priority</span></code>）</strong>：议题的优先级，用于确定讨论的顺序或重要性。</p></li>
-</ul>
+<h1>计划管理<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -362,7 +353,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./deliberation"
+            path: "./planning"
         },
         predefinedOutput: true
     }
@@ -380,20 +371,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="representative.html"
+       href="../index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">议事代表</p>
+        <p class="prev-next-title">简介</p>
       </div>
     </a>
     <a class="right-next"
-       href="agenda.html"
+       href="plan.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">议程</p>
+        <p class="prev-next-title">计划</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

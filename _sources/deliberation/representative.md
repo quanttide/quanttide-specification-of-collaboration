@@ -11,4 +11,4 @@
 - ID(`id`)
 - 创建时间(`createdAt`)
 - 用户(`user`) 
-- 议事机构(`institute`)
+- 议事机构(`institution`)

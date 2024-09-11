@@ -20,7 +20,7 @@
 
 ## 汇报关系
 
-议事机构汇报关系(`InstituteRelation`) 
+议事机构汇报关系(`DeliberativeInstitutionRelation`) 
 
 字段：
 

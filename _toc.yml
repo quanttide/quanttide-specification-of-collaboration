@@ -1,14 +1,38 @@
 format: jb-book
 root: index.md
-chapters:
-  - file: planning/README.md
-    sections:
-      - file: planning/plan.md
-  - file: discussion/README.md
-  - file: deliberation/README.md
-    sections:
-      - file: deliberation/institution.md
-      - file: deliberation/representative.md
-      - file: deliberation/issue.md
-      - file: deliberation/agenda.md
-      - file: deliberation/parliamentary_procedure.md
+parts:
+  - caption: 执行
+    chapters:
+      - file: executing/acting/README.md
+        sections:
+          - file: executing/acting/action.md
+      - file: executing/scheduling/README.md
+        sections:
+          - file: executing/scheduling/calendar.md
+          - file: executing/scheduling/schedule.md
+      - file: executing/focusing/README.md
+        sections:
+          - file: executing/focusing/objective.md
+          - file: executing/focusing/key_result.md
+      - file: executing/noting/README.md
+        sections:
+          - file: executing/noting/note.md
+      - file: executing/conversing/README.md
+        sections:
+          - file: executing/conversing/message.md
+  - caption: 统筹
+    chapters:
+      - file: coordinating/deciding/README.md
+      - file: coordinating/planning/README.md
+        sections:
+          - file: coordinating/planning/plan.md
+  - caption: 协商
+    chapters:
+      - file: negotiating/discussing/README.md
+      - file: negotiating/deliberating/README.md
+        sections:
+          - file: negotiating/deliberating/institution.md
+          - file: negotiating/deliberating/representative.md
+          - file: negotiating/deliberating/issue.md
+          - file: negotiating/deliberating/agenda.md
+          - file: negotiating/deliberating/parliamentary_procedure.md

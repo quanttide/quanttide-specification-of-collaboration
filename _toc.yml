@@ -1,6 +1,21 @@
 format: jb-book
 root: index.md
 parts:
+  - caption: 协作主体
+    chapters:
+      - file: subjects/teams/README.md
+      - file: subjects/collaborators/README.md
+      - file: subjects/groups/README.md
+  - caption: 协作元素
+    chapters:
+      - file: elements/activities/README.md
+        sections:
+          - file: elements/activities/coordination/README.md
+            sections:
+              - file: elements/activities/coordination/plan.md
+              - file: elements/activities/coordination/evaluation.md
+      - file: elements/procedures/README.md
+      - file: elements/regulations/README.md
   - caption: 执行
     chapters:
       - file: executing/acting/README.md
@@ -20,12 +35,6 @@ parts:
       - file: executing/conversing/README.md
         sections:
           - file: executing/conversing/message.md
-  - caption: 统筹
-    chapters:
-      - file: coordinating/deciding/README.md
-      - file: coordinating/planning/README.md
-        sections:
-          - file: coordinating/planning/plan.md
   - caption: 协商
     chapters:
       - file: negotiating/discussing/README.md

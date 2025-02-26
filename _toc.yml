@@ -6,6 +6,12 @@ parts:
       - file: subjects/teams/README.md
       - file: subjects/collaborators/README.md
       - file: subjects/groups/README.md
+  - caption: 协作分类
+    chapters:
+      - file: classifications/topics/README.md
+        sections:
+          - file: classifications/topics/topic.md
+      - file: classifications/categories/README.md
   - caption: 协作元素
     chapters:
       - file: elements/activities/README.md
